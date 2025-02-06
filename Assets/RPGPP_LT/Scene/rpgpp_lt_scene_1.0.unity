@@ -16175,7 +16175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fefb09522c2d69f4daae48647538a4e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxPrefab: {fileID: 62256712327031202, guid: 4f0797515e421984b9059358ec7753da, type: 3}
+  boxPrefab: {fileID: 1000014038691284, guid: efebddd0b5766bd499be8b63f581de68, type: 3}
 --- !u!1001 &1868782965
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -9,21 +9,34 @@ public class HtmlBox : MonoBehaviour
 
     private Transform textTransform; 
     private Camera mainCamera;
+
     void Start()
     {
         Debug.Log("Caja creada - Índice: " + myIndex + " - Etiqueta: " + htmlTag);
 
         mainCamera = Camera.main;
 
+
         GameObject textObject = new GameObject("BoxText");
         textObject.transform.SetParent(transform);
         textObject.transform.localPosition = Vector3.up * 2;
 
         TextMeshPro textMesh = textObject.AddComponent<TextMeshPro>();
-        textMesh.text = htmlTag + "(" + myIndex + ")";
+        textMesh.text = htmlTag;
         textMesh.fontSize = 5;
-        textMesh.color = Color.red;
+        textMesh.color = Color.black;
         textMesh.alignment = TextAlignmentOptions.Center;
+        textMesh.outlineColor = Color.black; 
+        textMesh.outlineWidth = 0.2f;
+
+        GameObject backgroundObject = GameObject.CreatePrimitive(PrimitiveType.Quad);
+        backgroundObject.name = "TextBackground";
+        backgroundObject.transform.SetParent(textObject.transform);
+        
+        backgroundObject.transform.localPosition = new Vector3(0, 0, 0.1f); 
+
+        backgroundObject.transform.localScale = new Vector3(2, 1.5f, 1); 
+
 
         textTransform = textObject.transform;
     }

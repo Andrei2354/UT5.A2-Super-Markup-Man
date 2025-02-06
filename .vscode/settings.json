@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Tarea2.sln"
+    "dotnet.defaultSolution": "Proyecto-SuperMarkMan.sln"
 }
